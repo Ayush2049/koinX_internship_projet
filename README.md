@@ -1,75 +1,78 @@
-# React + TypeScript + Vite
+# KoinX Tax Loss Harvesting
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React + TypeScript implementation of the KoinX Tax Loss Harvesting dashboard.
 
-Currently, two official plugins are available:
+The application allows users to review crypto holdings, select assets for tax-loss harvesting, compare capital gains before and after harvesting, and interact with short-term and long-term gain sorting.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Project
 
-## React Compiler
+🔗 **https://koinx-lovat.vercel.app/**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📸 Screenshots
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Tax Harvesting Dashboard
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+![Tax Harvesting Dashboard](./screenshots/dashboard.png)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Holdings Table
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+![Holdings Table](./screenshots/holdings-table.png)
 
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ✨ Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- 📊 Pre-harvesting vs After-harvesting capital gains
+- 💰 Short-term and long-term capital gain breakdown
+- 🪙 Crypto holdings table
+- ☑️ Individual holding selection
+- ☑️ Select all / deselect all
+- 📈 Short-term gain sorting
+- 📉 Long-term gain sorting
+- 🔼 Ascending / descending sorting
+- 👀 Displays 4 holdings initially
+- 🔎 View all holdings
+- 💸 Dynamic amount-to-sell calculation
+- 🎉 Dynamic savings message
+- ℹ️ Expandable Important Notes & Disclaimers
+- 💡 Human-readable value tooltips
+- 📱 Responsive UI
+- 🇮🇳 INR currency formatting
+- 🌙 Dark-themed interface
+- ⚡ Vite-powered development and production builds
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
+---
+
+## 🛠️ Tech Stack
+
+- **React**
+- **TypeScript**
+- **Vite**
+- **Tailwind CSS**
+- **Zustand**
+- **Lucide React**
+- **Vercel**
+
+---
+
+
+# ⚙️ Setup & Installation
+
+## Prerequisites
+
+Make sure you have the following installed:
+
+- **Node.js 20+**
+- **npm**
+- **Git**
+
+You can verify your Node.js and npm versions with:
+
+```bash
+node -v
+npm -v
 ])
 
 ```
