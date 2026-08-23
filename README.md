@@ -1,7 +1,5 @@
 # KoinX Tax Loss Harvesting
 
-A modern React + TypeScript implementation of the KoinX Tax Loss Harvesting dashboard.
-
 The application allows users to review crypto holdings, select assets for tax-loss harvesting, compare capital gains before and after harvesting, and interact with short-term and long-term gain sorting.
 
 ## 🚀 Live Project
