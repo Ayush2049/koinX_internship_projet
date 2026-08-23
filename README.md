@@ -14,11 +14,11 @@ The application allows users to review crypto holdings, select assets for tax-lo
 
 ### Tax Harvesting Dashboard
 
-![Tax Harvesting Dashboard](https://github.com/Ayush2049/koinX_internship_projet/blob/c949be69288ef00829eb44268cc0aaab2e7ac757/public/Screenshot%202026-08-23%20174745.png)
+![Tax Harvesting Dashboard](./screenshots/dashboard.png)
 
 ### Holdings Table
 
-![Holdings Table](https://github.com/Ayush2049/koinX_internship_projet/blob/e6f4e8235bae5284269b739d67c048e61ef81899/public/Screenshot%202026-08-23%20174808.png)
+![Holdings Table](./screenshots/holdings-table.png)
 
 ---
 
@@ -57,7 +57,6 @@ The application allows users to review crypto holdings, select assets for tax-lo
 
 ---
 
-
 # ⚙️ Setup & Installation
 
 ## Prerequisites
@@ -73,6 +72,115 @@ You can verify your Node.js and npm versions with:
 ```bash
 node -v
 npm -v
-])
 
+---
+
+# ⚙️ Setup & Installation
+
+## Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js 20+
+- npm
+- Git
+
+Check your installed versions:
+
+```bash
+node -v
+npm -v
+git --version
+````
+
+---
+
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/Ayush2049/koinX_internship_projet.git
 ```
+
+Navigate into the project:
+
+```bash
+cd koinX_internship_projet
+```
+
+If the frontend is inside a `frontend` directory:
+
+```bash
+cd frontend
+```
+
+---
+
+## 2. Install Dependencies
+
+```bash
+npm install
+```
+
+This installs all dependencies required by the project.
+
+---
+
+## 3. Start the Development Server
+
+```bash
+npm run dev
+```
+
+The Vite development server will start.
+
+Open the URL displayed in the terminal, usually:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## 4. Run TypeScript Check
+
+To verify that there are no TypeScript errors:
+
+```bash
+npx tsc --noEmit
+```
+
+---
+
+## 5. Create Production Build
+
+```bash
+npm run build
+```
+
+The production build will be generated in:
+
+```text
+dist/
+```
+
+---
+
+## 6. Preview Production Build
+
+```bash
+npm run preview
+```
+
+---
+
+
+# 👨‍💻 Author
+
+**Ayush**
+
+
+## 🔗 Links
+
+* **Live Project:** [https://koinx-lovat.vercel.app/](https://koinx-lovat.vercel.app/)
+* **GitHub Repository:** [https://github.com/Ayush2049/koinX_internship_projet](https://github.com/Ayush2049/koinX_internship_projet)
+
