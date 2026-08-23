@@ -176,7 +176,7 @@ npm run preview
 
 # 👨‍💻 Author
 
-**Ayush**
+**Ayush2049**
 
 
 ## 🔗 Links
