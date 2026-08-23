@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+:root {
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  color: #ffffff;
+  background: #090a10;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100%;
+}
+
+html {
+  background: #090a10;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: #090a10;
+  color: #ffffff;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+table {
+  border-spacing: 0;
+}
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+/* Main page background */
+.bg-\[\#f3f7fb\],
+.bg-\[\#f5f8fc\] {
+  background-color: #090a10 !important;
+}
+
+/* Header / cards / holdings surface */
+.bg-white {
+  background-color: #171923 !important;
+}
+
+/* Table header */
+.bg-\[\#f7faff\] {
+  background-color: #0c0d14 !important;
+}
+
+/* Selected holding row */
+.bg-\[\#eef6ff\] {
+  background-color: #111d3d !important;
+}
+
+/* Main text */
+.text-\[\#111827\] {
+  color: #f8f9fc !important;
+}
+
+/* Secondary text */
+.text-slate-400 {
+  color: #969baa !important;
+}
+
+.text-slate-500 {
+  color: #aeb2c0 !important;
+}
+
+.text-slate-600 {
+  color: #c5c8d2 !important;
+}
+
+.text-slate-700 {
+  color: #e3e5eb !important;
+}
+
+/* =========================================================
+   BORDERS
+   ========================================================= */
+
+.border-slate-100 {
+  border-color: #292c38 !important;
+}
+
+.border-slate-200 {
+  border-color: #292c38 !important;
+}
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+.hover\:bg-slate-100:hover {
+  background-color: #242631 !important;
+}
+
+/* =========================================================
+   DISCLAIMER
+   ========================================================= */
+
+.bg-\[\#eef5ff\] {
+  background-color: #111b34 !important;
+}
+
+.border-\[\#b8d0ff\] {
+  border-color: #29477d !important;
+}
+
+/* =========================================================
+   INPUTS
+   ========================================================= */
+
+input[type="checkbox"] {
+  color-scheme: dark;
+}
+
+/* =========================================================
+   LINKS / KOINX BLUE
+   ========================================================= */
+
+.text-\[\#1264ff\] {
+  color: #1680ff !important;
+}
+
+/* =========================================================
+   RED / GREEN GAINS
+   ========================================================= */
+
+.text-\[\#ef4444\] {
+  color: #ff4d67 !important;
+}
+
+.text-\[\#16a34a\] {
+  color: #00d6a3 !important;
+}
