@@ -14,7 +14,7 @@ The application allows users to review crypto holdings, select assets for tax-lo
 
 ### Tax Harvesting Dashboard
 
-![Tax Harvesting Dashboard](./screenshots/dashboard.png)
+![Tax Harvesting Dashboard](https://github.com/Ayush2049/koinX_internship_projet/blob/9ce27f17fe43ee36484e8167cadcad3cca71e9d6/public/Screenshot%202026-08-23%20174745.png)
 
 ### Holdings Table
 
