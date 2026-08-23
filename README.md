@@ -38,9 +38,6 @@ The application allows users to review crypto holdings, select assets for tax-lo
 - 💡 Human-readable value tooltips
 - 📱 Responsive UI
 - 🇮🇳 INR currency formatting
-- 🌙 Dark-themed interface
-- ⚡ Vite-powered development and production builds
-
 ---
 
 ## 🛠️ Tech Stack
