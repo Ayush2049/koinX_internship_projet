@@ -18,7 +18,7 @@ The application allows users to review crypto holdings, select assets for tax-lo
 
 ### Holdings Table
 
-![Holdings Table](./screenshots/holdings-table.png)
+![Holdings Table](https://github.com/Ayush2049/koinX_internship_projet/blob/fa0d92c3e226b66c3f7d68fcd4f155bd364f9602/public/Screenshot%202026-08-23%20174808.png)
 
 ---
 
