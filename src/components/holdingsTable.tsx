@@ -16,14 +16,12 @@ export default function HoldingsTable() {
     useHoldingSelection();
 
   const [showAll, setShowAll] = useState(false);
-  const [sortField, setSortField] = useState<SortField | null>(null);
+
+  // Default sorting after refresh
+  const [sortField, setSortField] = useState<SortField>("stcg");
   const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
 
   const sortedHoldings = useMemo(() => {
-    if (!sortField) {
-      return holdings;
-    }
-
     return [...holdings].sort((first, second) => {
       const firstGain =
         sortField === "stcg" ? first.stcg.gain : first.ltcg.gain;
@@ -114,18 +112,24 @@ export default function HoldingsTable() {
                 <button
                   type="button"
                   onClick={() => handleSort("stcg")}
-                  className="inline-flex items-center gap-1.5 transition-colors hover:text-white"
+                  className={`inline-flex items-center gap-1.5 transition-colors ${
+                    sortField === "stcg" ? "text-white" : "hover:text-white"
+                  }`}
                 >
                   <span>Short-Term Gain</span>
 
-                  {sortField === "stcg" && (
-                    <span
-                      aria-hidden="true"
-                      className="text-[12px] font-semibold text-[#3898ff]"
-                    >
-                      {sortDirection === "desc" ? "↓" : "↑"}
-                    </span>
-                  )}
+                  <span
+                    aria-hidden="true"
+                    className={`text-[13px] font-bold ${
+                      sortField === "stcg" ? "text-[#3898ff]" : "text-slate-500"
+                    }`}
+                  >
+                    {sortField === "stcg"
+                      ? sortDirection === "desc"
+                        ? "↓"
+                        : "↑"
+                      : "↓"}
+                  </span>
                 </button>
               </th>
 
@@ -134,18 +138,24 @@ export default function HoldingsTable() {
                 <button
                   type="button"
                   onClick={() => handleSort("ltcg")}
-                  className="inline-flex items-center gap-1.5 transition-colors hover:text-white"
+                  className={`inline-flex items-center gap-1.5 transition-colors ${
+                    sortField === "ltcg" ? "text-white" : "hover:text-white"
+                  }`}
                 >
                   <span>Long-Term Gain</span>
 
-                  {sortField === "ltcg" && (
-                    <span
-                      aria-hidden="true"
-                      className="text-[12px] font-semibold text-[#3898ff]"
-                    >
-                      {sortDirection === "desc" ? "↓" : "↑"}
-                    </span>
-                  )}
+                  <span
+                    aria-hidden="true"
+                    className={`text-[13px] font-bold ${
+                      sortField === "ltcg" ? "text-[#3898ff]" : "text-slate-500"
+                    }`}
+                  >
+                    {sortField === "ltcg"
+                      ? sortDirection === "desc"
+                        ? "↓"
+                        : "↑"
+                      : "↓"}
+                  </span>
                 </button>
               </th>
 
